@@ -1,0 +1,96 @@
+/*
+1. Posicionamiento
+1. Modelo Caja (Box model)
+1. Tipografia
+1. Visuales
+1. Otros
+*/
+
+:root{
+    /*Colors*/
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9da;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+.header__imagotipo{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+}
+
+.header__title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+.header__title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header__title-description{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header__button-section-searcher{
+    position: absolute;
+    bottom: -24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 48px;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header__button-icon{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/down-arrow.svg');
+}
